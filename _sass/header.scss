@@ -1,0 +1,26 @@
+#photo{
+    margin: 2vw;
+    min-height: 100px;
+    max-width: calc(24vh + 12vw);
+    max-height: calc(24vh + 12vw);
+    border: 2px solid white;
+    object-fit: cover;
+}
+
+#role{
+    color: lightgray;
+    font-weight: lighter;
+}
+
+.social{
+    margin: 15px;
+    min-height: 50px;
+    max-height: 100px;
+    transition: transform .5s ease;
+    object-fit: contain;
+}
+
+.social:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}

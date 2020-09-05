@@ -1,0 +1,12 @@
+.content{
+    border-spacing: 15px;
+    margin-top: calc(24vh + 16vw);
+}
+
+.content > div{
+    padding: 50px;
+}
+
+.content > div:nth-child(even){
+    background-color: #fafafa;
+}

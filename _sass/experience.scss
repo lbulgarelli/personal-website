@@ -1,0 +1,28 @@
+.exp ul{
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.exp:not(:last-of-type){
+    border-right: 1px grey solid;
+}
+
+.exp img{
+    height: 75px;
+    width: 100px;
+    margin: 5px 15px;
+    object-fit: contain;
+}
+
+.exp .title{
+    font-size: 1.5em;
+}
+
+.exp .subtitle{
+    color: grey;
+    font-weight: 300;
+}
+
+.exp figcaption, .exp ul{
+    min-width: 200px !important;
+}

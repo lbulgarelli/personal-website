@@ -1,0 +1,8 @@
+<figure class="d-table-row text-left">
+    <img src="{{ work.image_path }}" alt="" class="d-table-cell">
+    <figcaption class="d-table-cell align-middle">
+        <span class="title">{{ work.position }}</span><br>
+        {% if work.department %} <span class="subtitle">{{ work.department }}</span><br>{% endif %}
+        <span class="subtitle">{{ work.institution }}</span><br>
+    </figcaption>
+</figure>

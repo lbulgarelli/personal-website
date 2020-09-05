@@ -1,0 +1,29 @@
+.project{
+    background: rgba(0,0,0,.025);
+    padding: 40px;
+    margin: 25px;
+    display: inline-block;
+    border-radius: 15px;
+    transition: transform .5s ease;
+}
+
+.project img{
+    object-fit: contain;
+    max-height: 250px;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.project figcaption{
+    max-width: 400px;
+}
+
+.project, .project:visited{
+    color: unset;
+}
+
+.project:hover{
+    text-decoration: none;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
