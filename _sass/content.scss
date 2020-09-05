@@ -10,3 +10,19 @@
 .content > div:nth-child(even){
     background-color: #fafafa;
 }
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        margin-top: 0px;
+    }
+
+    .content > div{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}

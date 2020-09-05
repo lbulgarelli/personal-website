@@ -5,7 +5,7 @@
 .exp img{
     height: 75px;
     width: 100px;
-    margin: 5px 15px;
+    margin: 5px;
     object-fit: contain;
 }
 
@@ -19,27 +19,25 @@
 }
 
 .exp figcaption{
-    min-width: 300px !important;
+    min-width: min(300px, 50vw);
 }
 
-@media (max-width: 768px){
-    body > header{
-        position: initial !important;
-    }
-
-    .content{
-        margin-top: 25px;
-    }
+.exp{
+    padding: 0;
 }
 
-@media (max-width: 1080px){
+@media screen and (max-width: 1050px){
     .exp:not(:last-of-type){
-        border-right: 1px transparent solid;
-        border-bottom: 1px grey solid;
+        border-right-color: transparent;
+        border-bottom: 1px gray solid;
         padding-bottom: 25px;
     }
 
     .exp:not(:first-of-type){
         padding-top: 25px;
+    }
+
+    .exp{
+        margin: 0 10px;
     }
 }
