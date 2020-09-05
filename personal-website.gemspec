@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "personal-website"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Lucas Bulgarelli"]
   spec.email         = ["lucas.bulgarelli@hotmail.com"]
 
@@ -16,4 +16,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.1.4"
   spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_development_dependency "kramdown-parser-gfm", "~> 1.1.0"
 end
