@@ -1,0 +1,38 @@
+.post img{
+    margin: 5px 10px;
+    width: calc(100% - 305px);
+    height: 15em;
+    object-fit: cover;
+}
+
+.post .desc{
+    display: inline-block;
+    margin: 5px 10px;
+    width: 260px;
+    vertical-align: top;
+}
+
+.post a:hover{
+    text-decoration: none;
+}
+
+#post{
+    margin: 50px;
+    width: min(700px, calc(100% - 100px));
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+}
+
+#post-content img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .post{
+        margin: 0 25px;
+    }
+
+    .post img, .post .desc{
+        width: calc(100% - 20px);
+    }
+}

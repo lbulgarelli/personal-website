@@ -17,10 +17,20 @@ layout: default
 
 <body>
     {% include header.html %}
-    <div class="content">
+    <div id="home-content">
         {% assign content_stripped = content | strip %}
         {% if content_stripped != "" %}
             <div>{{ content }}</div>
+        {% endif %}
+        {% if site.posts %}
+            <div>
+                <h1 class="text-center mb-5">Blog</h1>
+                <div class="posts">
+                    {% for post in site.posts %}
+                        {% include post.html %}
+                    {% endfor %}
+                </div>
+            </div>
         {% endif %}
         {% if site.data.work or site.data.education %}
             <div class="row d-flex">
@@ -47,11 +57,13 @@ layout: default
             </div>
         {% endif %}
         {% if site.data.projects %}
-            <div class="text-center">
-                <h1>Projects</h1>
-                {% for project in site.data.projects %}
-                    {% include project.html %}
-                {% endfor %}
+            <div>
+                <h1 class="text-center">Projects</h1>
+                <div class="projects">
+                    {% for project in site.data.projects %}
+                        {% include project.html %}
+                    {% endfor %}
+                </div>
             </div>
         {% endif %}
     </div>

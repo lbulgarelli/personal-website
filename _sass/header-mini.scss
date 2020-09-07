@@ -1,0 +1,12 @@
+body > header{
+    position: initial !important;
+}
+
+#photo{
+    margin: calc(2vw * (1 - 250 / 350));
+    max-height: 100px;
+}
+
+.social{
+    max-height: 50px;
+}

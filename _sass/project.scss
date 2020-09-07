@@ -3,20 +3,17 @@
     padding: 40px;
     margin: 25px;
     display: inline-block;
-    border-radius: 15px;
     transition: transform .5s ease;
 }
 
 .project img{
     object-fit: contain;
-    max-height: 250px;
-    max-width: 100%;
-    width: 400px;
-    border-radius: 15px;
+    max-height: 300px;
+    width: 100%;
 }
 
 .project figcaption{
-    max-width: 400px;
+    max-width: 100%;
 }
 
 .project, .project:visited{

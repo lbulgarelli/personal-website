@@ -1,7 +1,11 @@
+body > header{
+    box-shadow: 0 0 1px black;
+}
+
 #photo{
     margin: 2vw;
     min-height: 100px;
-    max-width: calc(24vh + 12vw);
+    max-width: min(calc(24vh + 12vw), 100%);
     max-height: calc(24vh + 12vw);
     border: 2px solid white;
     object-fit: cover;
