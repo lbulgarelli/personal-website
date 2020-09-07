@@ -19,7 +19,8 @@ layout: default
         {% if content_stripped != "" %}
             <div>{{ content }}</div>
         {% endif %}
-        {% if site.posts %}
+        {% assign n_posts = site.posts | size %}
+        {% if n_posts > 0 %}
             <div>
                 <h1 class="text-center mb-5">Blog</h1>
                 <div class="posts">
