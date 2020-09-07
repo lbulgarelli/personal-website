@@ -14,6 +14,8 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll", "~> 3.9"
   spec.add_runtime_dependency "jekyll-mentions", "~> 1.5.1"
+  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6.1"
 
   spec.add_development_dependency "bundler", "~> 2.1.4"
   spec.add_development_dependency "rake", "~> 12.0"
