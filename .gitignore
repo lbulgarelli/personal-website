@@ -59,3 +59,10 @@ Gemfile.lock
 # Jekyll theme
 .sass-cache
 _site
+
+# Prototype website files
+_config.yml
+_data
+_posts
+assets/images/
+/index.md
