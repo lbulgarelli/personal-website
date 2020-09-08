@@ -19,12 +19,28 @@
 #post{
     margin: 50px;
     width: min(700px, calc(100% - 100px));
-    font-family: Georgia, serif;
+    font-family: "Times New Roman", Times, serif;
     font-size: 1.2em;
 }
 
 #post-content img{
     max-width: 100%;
+}
+
+table, th, td {
+    border: 1px solid silver;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    padding: 5px 15px;
+}
+
+th{
+    text-align: center;
 }
 
 @media screen and (max-width: 768px){
