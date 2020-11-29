@@ -22,7 +22,7 @@
 }
 
 .projects{
-    grid-template-columns: repeat(auto-fit, 600px);
+    grid-template-columns: repeat(auto-fit, min(100vw, 600px));
 }
 
 .row{
