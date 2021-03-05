@@ -1,6 +1,10 @@
-me_height = $("#photo").outerHeight();
-social_height = $(".social").outerHeight();
-me_margin = ($("#photo").outerHeight(true) - me_height) / 2;
+// Get viewport dimensions
+vw = $(window).width();
+vh = $(window).height()
+
+me_height = .24 * vh + .12 * vw // 24vh + 12vw
+social_height = .05 * vw;
+me_margin = .02 * vw;
 
 $(window).resize(function(e){
     $("#photo").outerHeight('');
