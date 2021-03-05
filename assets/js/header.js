@@ -12,9 +12,9 @@ $(window).resize(function(e){
     test(e);
 });
 
-$(window).scroll(test);
+$(window).scroll(scroll_header);
 
-function test(e){
+function scroll_header(e){
     scroll_top = $(window).scrollTop();
     // Disable resizing for small screens and negative scroll
     if(scroll_top < 0 || $(window).width() <= 768) return;
