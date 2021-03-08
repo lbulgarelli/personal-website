@@ -1,0 +1,13 @@
+<div class="item" year="{{ ext.year }}">
+    {% if ext.image %}
+        <a href="{{ ext.url }}" target="_blank"><img src="{{ ext.image }}"></a>
+    {% endif %}
+    <div {% if ext.image == nil %}class="no-img"{% endif %}>
+        <p>
+            <a href="{{ ext.url }}" target="_blank">{{ ext.title }}</a><br>
+            <span class="sub font-italic">{{ ext.subtitle }}</span><br>
+            <span class="sub">{{ ext.year }}</span>
+        </p>
+        <p class="sub">{{ ext.authors }}</p>
+    </div>
+</div>

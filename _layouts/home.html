@@ -64,6 +64,21 @@ layout: default
                 </div>
             </div>
         {% endif %}
+        {% if site.data.external %}
+            {% for external in site.data.external %}
+                <div class="external">
+                    <h1>{{ external[0] | capitalize }}</h1>
+                    <div class="list">
+                        {% for ext in external[1].list limit:external[1].limit %}
+                            {% include external-item.html %}
+                        {% endfor %}
+                    </div>
+                    {% if external[1].list.size > external[1].limit %}
+                        <a href="/{{ external[0] }}" target="_blank" class="more">More</a>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        {% endif %}
     </div>
     {% include footer.html %}
 </body>

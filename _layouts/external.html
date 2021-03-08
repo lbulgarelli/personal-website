@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/external.css">
+{% seo %}
+</head>
+
+<body>
+    {% include header.html %}
+    <div class="external mx-auto">
+        <div class="sidebar">
+            {% assign grouped = site.data.external[page.external].list | group_by: "year" %}
+            {% for year in grouped %}
+                <a href="/{{ page.external }}?year={{ year.name }}" class="active"><p>{{ year.name }}</p></a>
+            {% endfor %}
+        </div>
+        <div class="content">
+            <div>
+                {% assign content_stripped = content | strip %}
+                {% if content_stripped != "" %}
+                    <div>{{ content }}</div>
+                {% endif %}
+            </div>
+            <div class="list">
+                {% for ext in site.data.external[page.external].list | sort: "year", "title" %}
+                    {% include external-item.html %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="/assets/js/external.js"></script>
+</html>
