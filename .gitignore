@@ -65,4 +65,4 @@ _config.yml
 _data
 _posts
 assets/images/
-/index.md
+/*.md
