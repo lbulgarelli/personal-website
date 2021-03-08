@@ -21,16 +21,17 @@
     display: inline-flex;
     flex-wrap: wrap;
     margin: 25px;
+    flex-direction: column;
 }
 
-.external .item a{
-    margin: auto;
+.external .item .image{
+    margin: 0 auto;
 }
 
 .external .item img{
-    height: 300px;
-    margin: 0 25px;
-    vertical-align: top;
+    height: 250px;
+    max-width: min(calc(100vw - 40px), 400px);
+    object-fit: contain;
     transition: transform .5s ease;
 }
 
@@ -41,7 +42,7 @@
 }
 
 .external .item div{
-    margin: 10px auto;
+    margin: 10px 0;
     max-width: min(calc(100vw - 40px), 400px);
 }
 
@@ -55,7 +56,7 @@
 
 .external .more{
     margin-left: auto;
-    margin-right: 10vw;
+    margin-right: 1vw;
     padding: 10px;
     display: inline-flex;
     border: 1px black solid;
