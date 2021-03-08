@@ -29,7 +29,7 @@ layout: default
                 {% endif %}
             </div>
             <div class="list">
-                {% for ext in site.data.external[page.external].list | sort: "year", "title" %}
+                {% for ext in site.data.external[page.external].list %}
                     {% include external-item.html %}
                 {% endfor %}
             </div>

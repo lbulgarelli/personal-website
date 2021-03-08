@@ -1,12 +1,28 @@
 <div class="item" year="{{ ext.year }}">
     {% if ext.image %}
-        <a href="{{ ext.url }}" target="_blank"><img src="{{ ext.image }}"></a>
+        {% if ext.url == nil %}
+            <img src="{{ ext.image }}">
+        {% else %}
+            <a href="{{ ext.url }}" target="_blank"><img src="{{ ext.image }}"></a>
+        {% endif %}
     {% endif %}
     <div {% if ext.image == nil %}class="no-img"{% endif %}>
         <p>
-            <a href="{{ ext.url }}" target="_blank">{{ ext.title }}</a><br>
-            <span class="sub font-italic">{{ ext.subtitle }}</span><br>
-            <span class="sub">{{ ext.year }}</span>
+            {% if ext.url == nil %}
+                {{ ext.title }}
+            {% else %}
+                <a href="{{ ext.url }}" target="_blank">{{ ext.title }}</a>
+            {% endif %}
+            <br>
+            {% if ext.subtitle %}
+                <span class="sub font-italic">{{ ext.subtitle }}</span><br>
+            {% endif %}
+            <span class="sub">
+                {% if ext.location %}
+                    {{ ext.location }} - 
+                {% endif %}
+                {{ ext.year }}
+            </span>
         </p>
         <p class="sub">{{ ext.authors }}</p>
     </div>
