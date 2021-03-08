@@ -3,7 +3,7 @@
         {% if ext.url == nil %}
             <span class="image"><img src="{{ ext.image }}"></span>
         {% else %}
-            <a href="{{ ext.url }}" target="_blank" class="image"><img src="{{ ext.image }}"></a>
+            <a href="{{ ext.url }}" target="_blank" class="image" referrerpolicy="no-referrer"><img src="{{ ext.image }}"></a>
         {% endif %}
     {% endif %}
     <div {% if ext.image == nil %}class="no-img"{% endif %}>
@@ -11,7 +11,7 @@
             {% if ext.url == nil %}
                 {{ ext.title }}
             {% else %}
-                <a href="{{ ext.url }}" target="_blank">{{ ext.title }}</a>
+                <a href="{{ ext.url }}" target="_blank" referrerpolicy="no-referrer">{{ ext.title }}</a>
             {% endif %}
             <br>
             {% if ext.subtitle %}
