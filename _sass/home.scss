@@ -17,8 +17,11 @@
 }
 
 .posts{
-    grid-template-columns: repeat(auto-fit, max(600px, 40%));
     gap: 50px 75px;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects{
@@ -28,12 +31,6 @@
 .row{
     margin-left: 0;
     margin-right: 0;
-}
-
-@media screen and (max-width: 1374px){
-    .posts{
-        grid-template-columns: repeat(auto-fit, min(800px, 90%));
-    }
 }
 
 @media screen and (max-width: 768px){

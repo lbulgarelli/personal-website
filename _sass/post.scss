@@ -1,6 +1,11 @@
+.post{
+    display: inline-flex;
+    margin: 0 15px;
+}
+
 .post img{
     margin: 5px 10px;
-    width: calc(100% - 305px);
+    width: 400px;
     height: 15em;
     object-fit: cover;
 }
@@ -46,6 +51,7 @@ th{
 @media screen and (max-width: 768px){
     .post{
         margin: 0 25px;
+        display: initial;
     }
 
     .post img, .post .desc{

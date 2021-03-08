@@ -35,3 +35,5 @@ function scroll_header(e){
     // Resize social media icons
     $(".social").outerHeight(social_height - scroll_top / 5);
 }
+
+$(window).resize();
