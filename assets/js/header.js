@@ -10,10 +10,10 @@ $(window).resize(function(e){
     $("#photo").outerHeight('');
     $(".social").outerHeight('');
     $("#photo").css("margin", '');
-    me_height = $("#photo").outerHeight();
-    social_height = $(".social").outerHeight();
-    me_margin = ($("#photo").outerHeight(true) - me_height) / 2;
-    test(e);
+    me_height = .24 * vh + .12 * vw // 24vh + 12vw
+    social_height = .05 * vw;
+    me_margin = .02 * vw;
+    scroll_header(e);
 });
 
 $(window).scroll(scroll_header);
