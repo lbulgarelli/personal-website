@@ -6,7 +6,7 @@
 .post img{
     margin: 5px 10px;
     width: 400px;
-    height: 15em;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -50,11 +50,14 @@ th{
 
 @media screen and (max-width: 768px){
     .post{
-        margin: 0 25px;
         display: initial;
     }
 
     .post img, .post .desc{
-        width: calc(100% - 20px);
+        width: calc(100vw - 100px);
+    }
+
+    .post img{
+        height: calc(62.5vw - 100px);
     }
 }
