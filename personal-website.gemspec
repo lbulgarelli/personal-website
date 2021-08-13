@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "personal-website"
-  spec.version       = "0.2.12"
+  spec.version       = "0.2.13"
   spec.authors       = ["Lucas Bulgarelli"]
   spec.email         = ["lucas.bulgarelli@hotmail.com"]
 
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6.1"
 
-  spec.add_development_dependency "bundler", ">= 2.2.10"
+  spec.add_development_dependency "bundler", '~> 2.2', ">= 2.2.10"
   spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "kramdown-parser-gfm", "~> 1.1.0"
 end
