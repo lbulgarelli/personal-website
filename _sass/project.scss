@@ -1,7 +1,6 @@
 .project{
     background: rgba(0,0,0,.025);
     padding: 40px;
-    margin: 25px;
     display: inline-block;
     transition: transform .5s ease;
 }
@@ -22,6 +21,6 @@
 
 .project:hover{
     text-decoration: none;
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }

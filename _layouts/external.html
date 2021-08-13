@@ -16,9 +16,10 @@ layout: default
     {% include header.html %}
     <div class="external mx-auto">
         <div class="sidebar">
+            <a href="/{{ page.external }}" year="all"><p>All</p></a>
             {% assign grouped = site.data.external[page.external].list | group_by: "year" %}
             {% for year in grouped %}
-                <a href="/{{ page.external }}?year={{ year.name }}" class="active"><p>{{ year.name }}</p></a>
+                <a href="/{{ page.external }}?year={{ year.name }}" year="{{year.name}}"><p>{{ year.name }}</p></a>
             {% endfor %}
         </div>
         <div class="content">

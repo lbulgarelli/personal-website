@@ -1,18 +1,25 @@
 // Get viewport dimensions
 vw = $(window).width();
-vh = $(window).height()
+vh = $(window).height();
 
 me_height = .24 * vh + .12 * vw // 24vh + 12vw
 social_height = .05 * vw;
 me_margin = .02 * vw;
 
 $(window).resize(function(e){
+    // Get viewport dimensions
+    vw = $(window).width();
+    vh = $(window).height();
+
+    // Reset
     $("#photo").outerHeight('');
     $(".social").outerHeight('');
     $("#photo").css("margin", '');
     me_height = .24 * vh + .12 * vw // 24vh + 12vw
     social_height = .05 * vw;
     me_margin = .02 * vw;
+
+    // Scroll
     scroll_header(e);
 });
 

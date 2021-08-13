@@ -3,14 +3,17 @@
     width: min(900px, calc(100% - 100px));
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .external .sidebar{
     padding: 15px 50px;
+    flex-basis: 140px;
 }
 
 .external .content{
-    width: calc(100% - 140px);
+    flex-basis: 250px;
+    flex-grow: 1;
 }
 
 .external .list{
@@ -31,15 +34,18 @@
 
 .external .item .image{
     align-self: center;
+    flex-basis: 200px;
+    flex-grow: 1;
 }
 
 .external .item img{
-    width: 200px;
-    margin-right: 25px;
+    width: 100%;
 }
 
 .external .item div{
-    width: calc(100% - 225px);
+    margin: 15px;
+    flex-basis: 200px;
+    flex-grow: 99;
 }
 
 .external .item p:last-child{

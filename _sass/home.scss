@@ -25,7 +25,9 @@
 }
 
 .projects{
-    grid-template-columns: repeat(auto-fit, min(calc(100vw - 100px), 600px));
+    grid-template-columns: repeat(auto-fit, min(calc(100vw - 50px), 500px));
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
 }
 
 .row{
@@ -39,7 +41,7 @@
     }
 
     #home-content > div{
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
