@@ -9,7 +9,7 @@
                     <h1 class="text-light">{{ site.name }}</h1>
                     <h3 id="role">{{ site.position }}</h3>
                 </div>
-                <div class="col-md">
+                <div class="col-md-8">
                     {% for social in site.data.social %}
                         <a href="{{ social.external_url }}" target="_blank"><img src="{{ social.image_path }}" class="social" alt=""></a>
                     {% endfor %}
